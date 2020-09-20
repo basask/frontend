@@ -1,0 +1,22 @@
+openapi: 3.0.1
+info:
+  title: Sumé API
+  version: 1.0.0
+  description: Sumé API ...
+  termsOfService: 'https://www.sumelms.com/terms'
+  contact:
+    email: hi@sumelms.com
+    name: 'HI '
+    url: 'https://www.sumelms.com/'
+  license:
+    name: Apache 2.0
+    url: 'https://github.com/sumelms/frontend/blob/main/LICENSE'
+externalDocs:
+  description: Find out more about Sumé
+  url: 'https://www.sumelms.com/'
+servers:
+  - url: 'https://sumelms.io/'
+  - url: 'http://sumelms.io/'
+paths:
+  /:
+    summary: docs
