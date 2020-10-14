@@ -1,7 +1,0 @@
-servers:
-  account:
-    name: account-api
-    port: 8001
-  catalog:
-    name: catalog-api
-    port: 8002

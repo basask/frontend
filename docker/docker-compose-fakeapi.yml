@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  account-api:
+    container_name: "account-api"
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile_fakeapi
+    ports:
+      - 8000:8000
+    command: /swagger/account-api.yaml
+
+  catalog-api:
+    container_name: "catalog-api"
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile_fakeapi
+    environment:
+      - SPROUT_VALIDATE_REQUEST=true
+    ports:
+      - 8001:8000
+    command: /swagger/catalog-api.yaml
+    
